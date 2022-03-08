@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <link rel="stylesheet" href="gpc.template.css">
+    <title>Hello World</title>
+    <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Roboto, sans-serif;
+    }
+
+    header .title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 1.5rem;
+      font-size: 2.5rem;
+      color: #003b7a;
+      }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 1.3rem;
+      margin-left: 1.2rem;
+    }
+
+    .container .box {
+      display: flex;
+      align-items: center;
+      background-color: var(--gp-color-blue);
+      font-size: 1.2rem;
+      padding: 0.7rem;
+      border-radius: 4%;
+      cursor: pointer;
+    }
+
+    .container .box .name {
+      text-decoration: none !important;
+      color: white !important;
+    }
+
+    .container .box.event {
+      background-color: var(--gp-color-blue-dark); 
+    }
+
+    .container .box:first-child {
+      background-color: var(--gp-color-blue-turquoise);
+    }
+
+    .container .box:last-child {
+      background-color: var(--gp-color-blue-light);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">Electron Test</div>
+    </header>
+    <main>
+        <div class="container">
+          <div class="box">
+            <span class="name">Actualizaciones de sistema</span>
+          </div>
+
+          <div class="box">
+            <span class="name">Reporte de crash</span>
+          </div>
+
+          <div class="box">
+            <!-- <span href="./recordScreen.html" class="name">Grabar pantalla</span>  -->
+            <a href="./cases/Electron.html" class="name">Grabar Pantalla</a>
+          </div>
+
+          <div class="box event">
+            <span class="name">Connection status: <strong id='status'></strong></span>
+          </div>
+
+          <p id="output">Click it to see the effect in this interface.</p>
+        </div>
+    </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
