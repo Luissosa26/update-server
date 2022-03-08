@@ -1,0 +1,58 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add express express-fileupload morgan
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.2
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: self signed certificate in certificate chain
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1530:34)
+      at TLSSocket.emit (node:events:390:28)
+      at TLSSocket._finishInit (node:_tls_wrap:944:8)
+      at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:725:12)
+
+npm manifest: 
+  {
+    "name": "test2",
+    "version": "1.0.0",
+    "productName": "Electron Tutorial app",
+    "description": "Test",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "author": "LSOSA",
+    "license": "ISC",
+    "dependencies": {
+      "auto-launch": "^5.0.5",
+      "docker": "^1.0.0",
+      "electron-settings": "^4.0.2",
+      "electron-updater": "^4.6.5",
+      "npm-check-updates": "^12.4.0",
+      "update-electron-app": "^2.0.1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/sonyzach/usfm-validator.git"
+    },
+    "devDependencies": {
+      "electron-builder": "^22.14.13",
+      "electron-installer-dmg": "^3.0.0",
+      "electron-packager": "^15.4.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
